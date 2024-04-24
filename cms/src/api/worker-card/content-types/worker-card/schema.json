@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "worker_cards",
+  "info": {
+    "singularName": "worker-card",
+    "pluralName": "worker-cards",
+    "displayName": "worker-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "workerName": {
+      "type": "string"
+    },
+    "workerPosition": {
+      "type": "string"
+    }
+  }
+}

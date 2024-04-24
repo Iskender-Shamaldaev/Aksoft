@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resume_items",
+  "info": {
+    "singularName": "resume-item",
+    "pluralName": "resume-items",
+    "displayName": "resume-item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "children": {
+      "type": "string"
+    }
+  }
+}

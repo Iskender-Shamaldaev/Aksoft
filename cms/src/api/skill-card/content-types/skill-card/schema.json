@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_cards",
+  "info": {
+    "singularName": "skill-card",
+    "pluralName": "skill-cards",
+    "displayName": "skill-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

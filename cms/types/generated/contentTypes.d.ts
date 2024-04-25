@@ -969,6 +969,7 @@ export interface ApiFooterLinkFooterLink extends Schema.CollectionType {
   };
   attributes: {
     link: Attribute.String;
+    href: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

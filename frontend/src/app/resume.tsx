@@ -1,13 +1,13 @@
 "use client";
 
-import { Typography, Button } from "@material-tailwind/react";
+import {Typography} from "@material-tailwind/react";
 // import {
 //   ChartBarIcon,
 //   PuzzlePieceIcon,
 //   CursorArrowRaysIcon,
 //   ArrowRightIcon,
 // } from "@heroicons/react/24/solid";
-import { ResumeItem } from "@/components";
+import {ResumeItem} from "@/components";
 import {useGetResumesQuery} from "@/services/resume.services";
 import config from "@/config";
 
@@ -40,11 +40,11 @@ export function Resume() {
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {isLoading === false &&
             data.data[0].attributes.resume_items.data.map((item, index) => (
-            <ResumeItem key={index}
-                        children={item.attributes.children}
-                        imgSrc={`${config.api}${item.attributes.icon.data.attributes.url}`}
-                        imgAlt="Icon" />
-          ))}
+              <ResumeItem key={index}
+                          children={item.attributes.children}
+                          imgSrc={`${config.api}${item.attributes.icon.data.attributes.url}`}
+                          imgAlt="Icon"/>
+            ))}
         </div>
       </div>
     </section>

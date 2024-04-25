@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import { useGetFootersQuery } from "@/services/footer.services";
+import Link from "next/link";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -16,16 +17,15 @@ export function Footer() {
           </Typography>
           <ul className="flex gap-8 items-center">
             {!isLoading &&
-              data?.data[0]?.attributes?.footer_links?.data?.map((link) => (
+              data?.data[0]?.attributes?.footer_links?.data?.map((link: any) => (
                 <li key={link.id}>
-                  <Typography
-                    as="a"
-                    href="#"
+                  <Link
+                    href={link.attributes.href}
                     variant="small"
                     className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
                   >
                     {link.attributes.link}
-                  </Typography>
+                  </Link>
                 </li>
               ))}
           </ul>

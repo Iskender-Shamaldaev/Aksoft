@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nav-item",
     "pluralName": "nav-items",
-    "displayName": "navItem"
+    "displayName": "navItem",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +16,15 @@
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "href": {
+      "type": "string"
     }
   }
 }

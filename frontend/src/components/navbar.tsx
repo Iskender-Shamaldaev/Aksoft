@@ -4,10 +4,11 @@ import {useGetNavbarsQuery} from "@/services/navbar.services";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/20/solid";
 import Image from "next/image";
 import config from "@/config";
+import Link from "next/link";
 
 interface NavItemProps {
   children: React.ReactNode;
-  href?: string;
+  href: string;
   imgSrc: string;
   imgAlt: string;
 }
@@ -15,12 +16,9 @@ interface NavItemProps {
 function NavItem({children, href, imgSrc, imgAlt}: NavItemProps) {
   return (
     <li>
-      <Typography
-        as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="paragraph"
-        color="gray"
+      <Link
+        href={href}
+        // target={href ? "_self" : "_self"}
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         <Image src={imgSrc}
@@ -30,7 +28,7 @@ function NavItem({children, href, imgSrc, imgAlt}: NavItemProps) {
                className="h-5 w-5"/>
 
         {children}
-      </Typography>
+      </Link>
     </li>
   );
 }
@@ -84,7 +82,7 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
-            {data?.data[0]?.attributes?.nav_items?.data?.map(({id, attributes}) => (
+            {data?.data[0]?.attributes?.nav_items?.data?.map(({id, attributes}: any) => (
               <NavItem
                 key={id}
                 href={attributes?.href}

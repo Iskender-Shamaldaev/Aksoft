@@ -1017,6 +1017,7 @@ export interface ApiNavItemNavItem extends Schema.CollectionType {
     singularName: 'nav-item';
     pluralName: 'nav-items';
     displayName: 'navItem';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1024,6 +1025,7 @@ export interface ApiNavItemNavItem extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     icon: Attribute.Media;
+    href: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

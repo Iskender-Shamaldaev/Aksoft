@@ -17,11 +17,11 @@ export function SkillCard({title, children, imgAlt, imgSrc}: SkillCardProps) {
         <div
           className="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow">
           <Image src={imgSrc}
-                alt={imgAlt}
+                 alt={imgAlt}
                  width={768}
                  height={768}
-                className="h-8 w-8"
-        />
+                 className="h-8 w-8"
+          />
         </div>
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {title}

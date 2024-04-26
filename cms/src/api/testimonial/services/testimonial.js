@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * testimonial service
  */
 
-const { createCoreService } = require('@strapi/strapi').factories;
+const { createCoreService } = require("@strapi/strapi").factories;
 
-module.exports = createCoreService('api::testimonial.testimonial');
+module.exports = createCoreService("api::testimonial.testimonial");

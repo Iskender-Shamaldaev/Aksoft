@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * worker-card service
  */
 
-const { createCoreService } = require('@strapi/strapi').factories;
+const { createCoreService } = require("@strapi/strapi").factories;
 
-module.exports = createCoreService('api::worker-card.worker-card');
+module.exports = createCoreService("api::worker-card.worker-card");

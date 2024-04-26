@@ -22,4 +22,4 @@ const popularClientService: any = createApi({
 })
 export default popularClientService;
 
-export const { useGetPopularClientsQuery } = popularClientService;
+export const {useGetPopularClientsQuery} = popularClientService;

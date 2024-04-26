@@ -1,7 +1,7 @@
 import React from 'react';
 import {Avatar} from "@material-tailwind/react";
 
-const TestimonialCard = ({ author, isActive, onClick, imgSrc, imgAlt }) => {
+const TestimonialCard = ({author, isActive, onClick, imgSrc, imgAlt}) => {
   return (
     <>
       <Avatar

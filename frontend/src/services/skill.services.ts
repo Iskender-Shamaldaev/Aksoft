@@ -22,4 +22,4 @@ const skillService: any = createApi({
 })
 export default skillService;
 
-export const { useGetSkillsQuery } = skillService;
+export const {useGetSkillsQuery} = skillService;

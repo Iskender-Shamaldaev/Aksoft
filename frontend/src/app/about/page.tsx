@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import {Typography} from "@material-tailwind/react";
 
 
@@ -57,7 +57,7 @@ export default function About() {
         </Typography>
         <Typography
           variant="h3"
-          className="mx-auto text-center w-full !blue-gray-700 lg:w-10/12 mt-10 mb-10"
+          className="mx-auto text-center w-full !blue-gray-700 lg:w-10/12 mt-20"
         >
           Создавать - это наша страсть, это то, что делает нас живыми.
         </Typography>

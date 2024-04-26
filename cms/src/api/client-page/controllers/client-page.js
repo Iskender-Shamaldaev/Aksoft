@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * client-page controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::client-page.client-page');
+module.exports = createCoreController("api::client-page.client-page");

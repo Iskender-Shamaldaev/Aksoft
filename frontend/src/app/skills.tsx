@@ -1,11 +1,11 @@
 "use client"
-import { Typography } from "@material-tailwind/react";
-import { SkillCard } from "@/components";
-import { useGetSkillsQuery } from "@/services/skill.services";
+import {Typography} from "@material-tailwind/react";
+import {SkillCard} from "@/components";
+import {useGetSkillsQuery} from "@/services/skill.services";
 import config from "@/config";
 
 export function Skills() {
-  const { data, isLoading } = useGetSkillsQuery();
+  const {data, isLoading} = useGetSkillsQuery();
 
   return (
     <section className="px-8">

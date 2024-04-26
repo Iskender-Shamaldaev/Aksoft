@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * client-img router
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
+const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter('api::client-img.client-img');
+module.exports = createCoreRouter("api::client-img.client-img");

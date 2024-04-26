@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * resume controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::resume.resume');
+module.exports = createCoreController("api::resume.resume");

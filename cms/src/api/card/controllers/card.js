@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * card controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::card.card');
+module.exports = createCoreController("api::card.card");

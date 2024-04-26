@@ -22,4 +22,4 @@ const navbarService: any = createApi({
 })
 export default navbarService;
 
-export const { useGetNavbarsQuery } = navbarService;
+export const {useGetNavbarsQuery} = navbarService;

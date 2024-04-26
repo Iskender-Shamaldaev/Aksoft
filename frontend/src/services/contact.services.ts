@@ -22,4 +22,4 @@ const contactService: any = createApi({
 })
 export default contactService;
 
-export const { useGetContactsQuery } = contactService;
+export const {useGetContactsQuery} = contactService;

@@ -22,4 +22,4 @@ const resumeService: any = createApi({
 })
 export default resumeService;
 
-export const { useGetResumesQuery } = resumeService;
+export const {useGetResumesQuery} = resumeService;

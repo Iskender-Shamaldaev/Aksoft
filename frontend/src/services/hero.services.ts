@@ -22,4 +22,4 @@ const heroService: any = createApi({
 })
 export default heroService;
 
-export const { useGetHeroesQuery } = heroService;
+export const {useGetHeroesQuery} = heroService;

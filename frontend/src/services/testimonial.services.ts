@@ -22,4 +22,4 @@ const testimonialService: any = createApi({
 })
 export default testimonialService;
 
-export const { useGetTestimonialsQuery } = testimonialService;
+export const {useGetTestimonialsQuery} = testimonialService;

@@ -1,11 +1,11 @@
 "use client"
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
-import { useGetClientsQuery } from "@/services/client.services";
+import {Typography} from "@material-tailwind/react";
+import {useGetClientsQuery} from "@/services/client.services";
 import config from "@/config";
 
 export function Clients() {
-  const { data, isLoading } = useGetClientsQuery();
+  const {data, isLoading} = useGetClientsQuery();
 
   return (
     <section className="px-8 py-28">

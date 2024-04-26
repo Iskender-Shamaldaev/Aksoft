@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * footer-link controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::footer-link.footer-link');
+module.exports = createCoreController("api::footer-link.footer-link");

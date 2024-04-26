@@ -22,4 +22,4 @@ const footerService: any = createApi({
 })
 export default footerService;
 
-export const { useGetFootersQuery } = footerService;
+export const {useGetFootersQuery} = footerService;

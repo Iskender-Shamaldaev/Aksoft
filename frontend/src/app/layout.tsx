@@ -3,6 +3,7 @@ import "./globals.css";
 import type {Metadata} from "next";
 import {Roboto} from "next/font/google";
 import {Layout} from "@/components";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
@@ -12,7 +13,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Aksoft",
   description:
-    "Introducing Aksoft Landing Page.",
+    "Introducing Aksoft Website.",
 };
 
 export default function RootLayout({children}: {

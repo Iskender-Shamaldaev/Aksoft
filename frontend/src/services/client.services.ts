@@ -22,4 +22,4 @@ const clientService: any = createApi({
 })
 export default clientService;
 
-export const { useGetClientsQuery } = clientService;
+export const {useGetClientsQuery} = clientService;

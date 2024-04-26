@@ -51,11 +51,13 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
-          {data?.data[0]?.attributes?.companyName}
-        </Typography>
+        <Link href="/" className="text-blue-500 hover:text-blue-700">
+          <Typography color="blue-gray" className="text-lg font-bold">
+            {data?.data[0]?.attributes?.companyName}
+          </Typography>
+        </Link>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          { isLoading === false && data?.data[0]?.attributes?.nav_items?.data?.map(({id, attributes}) => (
+          {isLoading === false && data?.data[0]?.attributes?.nav_items?.data?.map(({id, attributes}) => (
             <NavItem
               key={id}
               href={attributes?.href}

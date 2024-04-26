@@ -9,7 +9,7 @@ interface ProjectCardProps {
   title: string;
 }
 
-export function ProjectCard({imgSrc, imgAlt,shortDescription,title}: ProjectCardProps) {
+export function ProjectCard({imgSrc, imgAlt, shortDescription, title}: ProjectCardProps) {
   return (
     <Card color="transparent" shadow={false}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">

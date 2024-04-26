@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, {useState} from "react";
 import emailjs from 'emailjs-com';
 import Image from "next/image";
 import {Button, Input, Typography} from "@material-tailwind/react";

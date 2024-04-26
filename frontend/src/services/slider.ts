@@ -22,4 +22,4 @@ const sliderService: any = createApi({
 })
 export default sliderService;
 
-export const { useGetSlidersQuery } = sliderService;
+export const {useGetSlidersQuery} = sliderService;

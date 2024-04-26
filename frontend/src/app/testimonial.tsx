@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import Image from "next/image";
 import {Card, CardBody, Typography} from "@material-tailwind/react";
 import TestimonialCard from "@/components/testimonial-card";
 import {useGetTestimonialsQuery} from "@/services/testimonial.services";

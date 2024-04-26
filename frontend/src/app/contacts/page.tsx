@@ -1,5 +1,5 @@
-'use client'
-import { Typography } from "@material-tailwind/react";
+"use client"
+import {Typography} from "@material-tailwind/react";
 
 export default function Contacts() {
   const handlePhoneClick = (phoneNumber: any) => {
@@ -17,7 +17,7 @@ export default function Contacts() {
           Контакты
         </Typography>
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between">
-          <div style={{ minHeight: '500px' }} className="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg mb-8 lg:mb-0">
+          <div style={{minHeight: '500px'}} className="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg mb-8 lg:mb-0">
             <h2 className="font-bold text-lg mb-4">Головной офис</h2>
             <div className="mb-4">
               <h3 className="font-bold">Адрес</h3>
@@ -25,18 +25,24 @@ export default function Contacts() {
             </div>
             <div className="mb-4">
               <h3 className="font-bold">Телефон</h3>
-              <p onClick={() => handlePhoneClick('+996999886644')} className="cursor-pointer text-green-500 hover:text-red-500">+996 (999) 88-66-44</p>
-              <p onClick={() => handlePhoneClick('+996505088099')} className="cursor-pointer text-green-500 hover:text-red-500">+996 (505) 08-80-99</p>
+              <p onClick={() => handlePhoneClick('+996999886644')}
+                 className="cursor-pointer text-green-500 hover:text-red-500">+996 (999) 88-66-44</p>
+              <p onClick={() => handlePhoneClick('+996505088099')}
+                 className="cursor-pointer text-green-500 hover:text-red-500">+996 (505) 08-80-99</p>
             </div>
             <div className="mb-4">
               <h3 className="font-bold">Email</h3>
-              <p onClick={() => handleEmailClick('aksoftkg@gmail.com')} className="cursor-pointer text-green-500 hover:text-red-500">aksoftkg@gmail.com</p>
+              <p onClick={() => handleEmailClick('aksoftkg@gmail.com')}
+                 className="cursor-pointer text-green-500 hover:text-red-500">aksoftkg@gmail.com</p>
             </div>
             <div className="mb-4">
               <h3 className="font-bold">Соц. сети</h3>
-              <p><a href="https://www.facebook.com/profile.php?id=100090742837257" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-red-500">Facebook</a></p>
-              <p><a href="https://wa.me/996999886644" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-red-500">WhatsApp</a></p>
-              <p><a href="https://t.me/jakshybala" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-red-500">Telegram</a></p>
+              <p><a href="https://www.facebook.com/profile.php?id=100090742837257" target="_blank"
+                    rel="noopener noreferrer" className="text-green-500 hover:text-red-500">Facebook</a></p>
+              <p><a href="https://wa.me/996999886644" target="_blank" rel="noopener noreferrer"
+                    className="text-green-500 hover:text-red-500">WhatsApp</a></p>
+              <p><a href="https://t.me/jakshybala" target="_blank" rel="noopener noreferrer"
+                    className="text-green-500 hover:text-red-500">Telegram</a></p>
             </div>
           </div>
           <div className="w-full lg:w-2/3 mb-8 lg:mb-0">

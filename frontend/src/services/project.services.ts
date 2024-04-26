@@ -17,9 +17,9 @@ const projectService: any = createApi({
   endpoints: (builder) => ({
     getCards: builder.query<any, any>({
       query: () => 'api/projects?populate[0]=cards.image&populate[1]=settings',
-     })
-    }),
-  })
-  export default projectService;
+    })
+  }),
+})
+export default projectService;
 
-  export const { useGetCardsQuery } = projectService;
+export const {useGetCardsQuery} = projectService;

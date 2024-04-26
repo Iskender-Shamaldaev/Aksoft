@@ -1,18 +1,18 @@
 'use client'
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../styles.css';
-import { Navigation, Pagination } from 'swiper/modules';
+import {Navigation, Pagination} from 'swiper/modules';
 import config from '@/config';
 import Image from 'next/image';
-import { Typography } from '@material-tailwind/react';
+import {Typography} from '@material-tailwind/react';
 import {useGetPopularClientsQuery} from "@/services/popular-clients";
 
 export function PopularClients() {
-  const { data, isLoading } = useGetPopularClientsQuery();
+  const {data, isLoading} = useGetPopularClientsQuery();
 
   return (
     <div>
@@ -20,7 +20,7 @@ export function PopularClients() {
         {data?.data[0]?.attributes?.title}
       </Typography>
       <Swiper
-        style={{ height: '400px', maxWidth: '1100px' }}
+        style={{height: '400px', maxWidth: '1100px'}}
         slidesPerView={1}
         spaceBetween={30}
         loop={true}

@@ -21,8 +21,6 @@ export function Testimonial() {
     }
   }, [testimonials]);
 
-  console.log(activeCommentator, "activeCommentator5555");
-
   return (
     <section className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
